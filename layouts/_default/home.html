@@ -1,9 +1,0 @@
-{{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  <ul>
-    {{ range where site.RegularPages "component" "posts" }}
-      {{ .Render "card" }}
-    {{ end }}
-  </ul>
-{{ end }}
